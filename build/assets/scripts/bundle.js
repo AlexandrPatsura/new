@@ -99,11 +99,13 @@ module.exports = __webpack_require__(2);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _common_toggleMenu__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
+/* harmony import */ var _common_slickSlider__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(3);
 
 
 
 
 Object(_common_toggleMenu__WEBPACK_IMPORTED_MODULE_0__["toggleMenu"])();
+Object(_common_slickSlider__WEBPACK_IMPORTED_MODULE_1__["slickSlider"])();
 
 /***/ }),
 /* 2 */
@@ -134,6 +136,30 @@ const toggleMenu = function() {
   });
   
 };
+
+/***/ }),
+/* 3 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "slickSlider", function() { return slickSlider; });
+const slickSlider = function() {
+
+  $('.alternatives-choose').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    // autoplay: true,
+    // autoplaySpeed: 2000,
+    // arrows: false,
+    // dots: true,
+    // dotsClass: 'button-slider-left',
+    variableWidth: true,
+    centerMode: true,
+    prevArrow: '<a class="button-slider-left" href="#"><img src="assets/img/back.png" alt=""></a>',
+    nextArrow: '<a class="button-slider-right" href="#"><img src="assets/img/forward.png" alt=""></a>',
+  });
+}
 
 /***/ })
 /******/ ]);
