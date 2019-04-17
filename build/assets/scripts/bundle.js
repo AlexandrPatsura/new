@@ -158,6 +158,17 @@ const slickSlider = function() {
     centerMode: true,
     prevArrow: '<a class="button-slider-left" href="#"><img src="assets/img/back.png" alt=""></a>',
     nextArrow: '<a class="button-slider-right" href="#"><img src="assets/img/forward.png" alt=""></a>',
+    responsive: [
+      {
+        breakpoint: 425,
+        settings: {
+          // arrows: false,
+          centerMode: true,
+          // centerPadding: '40px',
+          slidesToShow: 1
+        }
+      }
+    ]
   });
 }
 
