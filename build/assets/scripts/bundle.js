@@ -89,10 +89,10 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(1);
-__webpack_require__(4);
-__webpack_require__(5);
 __webpack_require__(3);
-module.exports = __webpack_require__(2);
+__webpack_require__(2);
+__webpack_require__(4);
+module.exports = __webpack_require__(5);
 
 
 /***/ }),
@@ -121,21 +121,22 @@ const toggleMenu = function() {
   
   $('.toggle-menu').click(function() {
     $('.sandwich').toggleClass('toggle-active');
-    if($('body').css('overflow') === 'visible') {
-      $('body').css('overflow', 'hidden');
-    } else {
-      $('body').css('overflow', 'visible');
-    }
+    // if($('body').css('overflow') === 'visible') {
+    //   $('body').css('overflow', 'hidden');
+    // } else {
+    //   $('body').css('overflow', 'visible');
+    // }
   });
   
   $('.toggle-menu').click(function() {
-    if ($('.menu-fullscreen').is(':visible')) {
-      $('.menu-fullscreen').css('display', 'none');
-      $('.user__scroll').css('display', 'flex');
-    } else {
-      $('.menu-fullscreen').css('display', 'block');
-      $('.user__scroll').css('display', 'none');
-    }
+    $('.header__navigation').toggleClass('isActive');
+  //   if ($('.menu-fullscreen').is(':visible')) {
+  //     $('.menu-fullscreen').css('display', 'none');
+  //     $('.user__scroll').css('display', 'flex');
+  //   } else {
+  //     $('.menu-fullscreen').css('display', 'block');
+  //     $('.user__scroll').css('display', 'none');
+  //   }
   });
   
 };
