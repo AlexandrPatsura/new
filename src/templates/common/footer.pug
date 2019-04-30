@@ -1,0 +1,74 @@
+footer.footer
+  .container
+    //- .footer__widget
+      .footer__widget-item
+        h4.uppertext услуги
+        ul.footer__menu
+          -
+            var links = [
+              ["#", "услуга №1"],
+              ["#", "услуга №1"],
+              ["#", "услуга №1"],
+              ["#", "услуга №1"],
+              ["#", "услуга №1"],
+              ["#", "услуга №1"],
+              ["#", "услуга №1"],
+              ["#", "услуга №1"],
+              ["#", "услуга №1"]
+            ]
+          each link in links
+            li
+              a(href=`${link[0]}`).uppertext #{link[1]}
+      .footer__widget-item
+        h4.uppertext о компании
+        ul.footer__menu
+          -
+            var links = [
+              ["#", "история"],
+              ["#", "о нас"],
+              ["#", "преимущества"],
+              ["#", "сертификаты"],
+              ["#", "награды"],
+              ["#", "отзывы"],
+              ["#", "наши партнеры"],
+              ["#", "наши клиенты"],
+            ]
+          each link in links
+            li
+              a(href=`${link[0]}`).uppertext #{link[1]}
+      .footer__widget-item
+        .portfolio
+          h4.uppertext портфолио
+        .blog
+          h4.uppertext блог
+      .footer__widget-item
+        .contact
+          h4.uppertext контакты
+          p +7 (902) 6548788<br>
+            | График работы: ПН-ПТ, 09:00-18:00<br>
+            | E-mail: stechnology@gmail.com<br>
+            | Адрес: г. Алматы, ул. Ленинская, 3
+        .pay
+          h4.uppertext способ оплаты:
+          .pay-image
+            a(href="#")
+              img(src="assets/img/paypal.jpg", alt="paypal")
+            a(href="#")
+              img(src="assets/img/mastercard.jpg", alt="mastercard")
+            a(href="#")
+              img(src="assets/img/visa.jpg", alt="visa")
+      .footer__widget-item.footer-social
+        a(href="#")
+          img(src="assets/img/instagram.png", alt="instagram-logo")
+        a(href="#")
+          img(src="assets/img/facebook.png", alt="facebook-logo")
+        a(href="#")
+          img(src="assets/img/youtube.png", alt="youtube-logo")
+    .footer-copyright
+      .logo
+        img(src="assets/img/logo.png", alt="logo")
+      span &copy; Copyright
+      span
+        a(href='/docs/privacy.pdf') Политика конфидециальности
+      span
+        a(href='/docs/company.pdf') Карточка предприятия

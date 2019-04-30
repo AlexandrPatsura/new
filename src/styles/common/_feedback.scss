@@ -1,0 +1,32 @@
+.feedback {
+
+  .feedback-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .feedback-block {
+      display: flex;
+      flex-basis: 555px;
+      height: 210px;
+      margin-bottom: 40px;
+      background-color: rgb(255, 255, 255);
+      box-shadow: 0px 14px 37.72px 8.28px rgba(0, 3, 6, 0.14);
+
+      .feedback-text {
+        display: flex;
+        flex-direction: column;
+        padding: 15px 15px 10px 18px;
+        box-sizing: border-box;
+
+        span {
+          display: block;
+          text-align: right;
+          margin-top: auto;
+          font-size: 12px;
+          font-family: "GothamProLight", sans-serif;
+        }
+      }
+    }
+  }
+}

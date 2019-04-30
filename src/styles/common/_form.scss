@@ -1,0 +1,54 @@
+form {
+  max-width: 555px;
+
+  input {
+    width: 263px;
+    height: 35px;
+    margin-right: 23px;
+    margin-bottom: 11px;
+    box-sizing: border-box;
+    border: none;
+    background-color: #abacac;
+    color: #fff;
+    padding: 11px;
+  }
+
+  input[type=email] {
+    margin-right: 0;
+  }
+
+  textarea {
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: none;
+    background-color: #abacac;
+    color: #fff;
+    padding: 8px;
+    width: 555px;
+    height: 105px;
+    // resize: vertical;
+    resize: none;
+    outline: none;
+    // overflow: auto;
+  }
+
+  input,
+  textarea {
+    font-size: 18px;
+
+    &::placeholder {
+      color: #fff;
+      font-size: 18px;
+    }
+  }
+
+  .button {
+    padding-left: 0;
+
+    .bevel-effect {
+      height: 45px;
+      line-height: 42px;
+      font-size: 18px;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+section.contact
+  .container
+    .title
+      h2.uppertext.center Контактные данные
+      span.backtitle где мы находимся
+    .contact-items
+      .maps#myMap
+        //- img(src="assets/img/maps.jpg", alt="")
+        //- <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A36e04b71bb314da07aa6d160abcc1ef30c229fc2422aa80aa1926ee72cf1253c&amp;lang=ru_RU&amp;scroll=false&amp;id=myMap"></script>
+      .setyouranswer
+        .footer__location
+          p
+            img(src="assets/img/location-pointer.png", alt="").icon.location
+            //- | ул. Профсоюзов 31/2, г. Сургут
+            | ул. Адмирала Юмашева 27, г. Севастополь
+        .phone
+          p
+            img(src="assets/img/call-answer.png", alt="").icon
+            //- | Тел. +7 (952) 712-51-45
+            | +7 (978) 505-96-05
+        .email
+          p
+            img(src="assets/img/email.png", alt="").icon
+            | info@sltex.ru
+        h5.uppertext задайте вопрос прямо сейчас:
+        form(action="" method="post")
+          input(type="name", name="contact-name", placeholder="Имя", required="required")
+          input(type="email", name="contact-email", placeholder="E-mail", required="required")
+          textarea(name="contact-text", placeholder="Вопрос", required="required", maxlength="512")
+          .button
+            button(type="submit").bevel-effect Отправить

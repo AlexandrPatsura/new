@@ -1,0 +1,271 @@
+html,
+body {
+  font-size: $main-fz;
+  font-family: $main-font;
+  color: $color-main;
+  margin: 0;
+  padding: 0;
+}
+
+// * {
+//   box-sizing: border-box;
+// }
+
+.wrapper {
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: border-box;
+
+  @media screen and (max-width: 425px) {
+    padding: 0 10px;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "GothamProBold", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+p {
+  font-family: "GothamProLight", sans-serif;
+  font-size: $main-fz;
+  line-height: 18px;
+  margin: 0 0 5px;
+
+  @media screen and (max-width: 425px) {
+    font-size: 14px;
+  }
+}
+
+ul {
+  font-size: 0;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  font-size: $main-fz;
+  list-style: none;
+
+  @media screen and (max-width: 425px) {
+    font-size: 14px;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: $color-main;
+}
+
+.center {
+  text-align: center;
+}
+
+.uppertext {
+  text-transform: uppercase;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+section {
+  margin-bottom: 85px;
+
+  @media screen and (max-width: 425px) {
+    margin-bottom: 35px;
+  }
+}
+
+.title {
+  position: relative;
+
+  h2 {
+    padding-bottom: 58px;
+
+    @media screen and (max-width: 425px) {
+      padding-bottom: 30px;
+      text-align: left;
+      font-size: 24px;
+      width: 290px;
+      margin-top: 15px;
+    }
+  }
+
+  .backtitle {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    font-size: 161.22px;
+    opacity: 0.05;
+    font-family: "GothamProBold", sans-serif;
+    text-transform: uppercase;
+    white-space: nowrap;
+    letter-spacing: -5px;
+
+    @media screen and (max-width: 425px) {
+      font-size: 32px;
+      top: -20px;
+      left: 0;
+      transform: none;
+      margin-right: 0;
+      letter-spacing: inherit;
+    }
+  }
+}
+
+.button {
+  padding-left: 27px;
+
+  @media screen and (max-width: 425px) {
+    padding-left: 0;
+  }
+
+  .bevel-effect {
+    display: inline-block;
+    font-family: "GothamProBold", sans-serif;
+    font-size: 24px;
+    width: 237px;
+    height: 58px;
+    line-height: 53px;
+    color: #fff;
+    text-align: center;
+    border: none;
+    background: #870f10;
+    box-shadow: inset 5px 5px 7px rgba(0, 0, 0, .5), inset -5px -5px 7px rgba(255, 255, 255, .5);
+
+    @media screen and (max-width: 425px) {
+      width: 195px;
+      height: 55px;
+      line-height: 51px;
+    }
+  }
+}
+
+.slick-slider {
+  margin: 0 -15px;
+
+  .slick-list {
+    padding: 30px 50px !important;
+
+    @media screen and (max-width: 425px) {
+      padding: 0 50px 30px !important;
+    }
+  }
+
+  .slick-arrow {
+    position: absolute;
+    bottom: -110px;
+    padding: 15px 31px;
+    background-color: #870f10;
+
+    @media screen and (max-width: 425px) {
+      width: 70px;
+      height: 7px;
+      bottom: -10px;
+      padding: 0;
+       
+      img {
+        display: none;
+      }
+    }
+  }
+
+  .button-slider-left {
+    left: 40%;
+
+    @media screen and (max-width: 425px) {
+      left: 25%;
+    }
+  }
+
+  .button-slider-right {
+    right: 40%;
+
+    @media screen and (max-width: 425px) {
+      right: 25%;
+    }
+  }
+}
+
+.button-slider {
+  // display: flex;
+  display: none;
+  justify-content: center;
+
+  a {
+
+    @media screen and (max-width: 425px) {
+      width: 70px;
+      height: 7px;
+    }
+  }
+
+  .button-slider-left,
+  .button-slider-right {
+    background-color: #870f10;
+    margin: 40px 15px;
+
+    img {
+      padding: 11px 30px;
+
+      @media screen and (max-width: 425px) {
+        display: none;
+      }
+    }
+  }
+}
+
+.breadcrumbs {
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+
+// Hide cross in input
+input[type=text]::-ms-clear,
+input[type=text]::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
+}
+input[type=search]::-webkit-search-decoration,
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-results-button,
+input[type=search]::-webkit-search-results-decoration {
+  display: none;
+}
+
+// .color-grey {
+//   color: $color-grey;
+// }

@@ -1,0 +1,12 @@
+//- .container
+#popup-overlay.overlay
+  .popup
+    h5.uppertext оставьте заявку прямо сейчас:
+    a.close(href="#") &times;
+    .content
+      form(action="" method="post")
+        input(type="name", name="request-name", placeholder="Имя", required="required")
+        input(type="email", name="request-email", placeholder="E-mail", required="required")
+        input(type="tel", name="request-phone", placeholder="Телефон", pattern="([0-9]{3})-[0-9]{3}-[0-9]{2}-[0-9]{2}", required="required")
+        .button
+          button(type="submit").bevel-effect Отправить

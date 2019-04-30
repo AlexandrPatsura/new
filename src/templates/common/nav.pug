@@ -1,0 +1,18 @@
+nav.header__navigation
+  .container
+    .toggle-menu
+      span.sandwich
+        span.top
+        span.center
+        span.bottom
+    ul.header__menu
+      -
+        var links = [
+          ["#advantages", "выгоды"],
+          ["#experience", "о продукте"],
+          ["#whywe", "преимущества"],
+          ["#examples", "портфолио"]
+        ]
+      each link in links
+        li
+          a(href=`${link[0]}`) #{link[1]}

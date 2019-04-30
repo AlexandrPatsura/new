@@ -1,0 +1,260 @@
+// @import 'normalize';
+@import 'common/_variables';
+@import 'common/_fonts';
+
+// ================ HEADER ====================
+
+@import 'common/_header';
+@import 'common/_nav';
+
+// ================ MAIN ====================
+
+@import 'common/_main';
+@import 'common/_banner';
+@import 'common/_partnership';
+@import 'common/_advantages';
+@import 'common/_experience';
+@import 'common/_alternatives';
+@import 'common/_whywe';
+@import 'common/_examples';
+// @import 'common/_feedback';
+// @import 'common/_cases-items';
+@import 'common/_contact';
+@import 'common/_form';
+
+
+// ================ FOOTER ====================
+
+@import 'common/_footer';
+
+// ============================ PORTFOLIO ===================================
+
+.sorting-block {
+
+  .sorting-items {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 30px;
+
+    .sorting-select {
+      width: 259px;
+      height: 39px;
+      overflow: hidden;
+
+
+      select {
+        background: transparent;
+        border: none;
+        // font-size: 18px;
+        height: 39px;
+        padding: 5px; /* If you add too much padding here, the options won't show in IE */
+        width: 259px;
+        color: #2b2b2b;
+        -webkit-appearance: none;
+        appearance: none;
+        background: url("../img/down-arrow.png") #ebebeb no-repeat;
+        background-position: center right 18px;
+      }
+    }
+  }
+
+  .button {
+    margin-bottom: 50px;
+  }
+}
+
+// ============================ SERVICE ===================================
+
+section.service,
+section.blog {
+
+  .service-block {
+    display: flex;
+
+    .stick-block {
+      flex-basis: 195px;
+      flex-shrink: 0;
+      padding-right: 70px;
+
+      .main-menu {
+        background-color: #fff;
+        border: 1px solid rgb(164, 2, 7);
+        box-shadow: 0px 14px 37.72px 8.28px rgba(0, 3, 6, 0.14);
+        padding: 13px;
+        margin-bottom: 55px;
+
+        li {
+          line-height: 30px;
+        }
+      }
+    }
+
+    .service-article {
+
+      .news-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+
+        h2 {
+          margin-top: -10px;
+          margin-bottom: 42px;
+          font-family: "GothamProBold", sans-serif;
+          text-align: left;
+        }
+  
+        span {
+          text-align: right;
+        }
+      }
+
+      .service-article-text {
+        margin-bottom: 40px;
+
+        img {
+          float: left;
+          padding-top: 8px;
+          padding-right: 17px;
+          padding-bottom: 45px;
+        }
+      }
+
+      .cases-items {
+
+        .cases-block {
+          flex-basis: 277px;
+        }
+      }
+  
+      .partnership-items {
+        margin-bottom: 75px;
+  
+        .item-block {
+          flex-basis: 397px;
+  
+          p {
+            text-align: left;
+          }
+        }
+      }
+
+      h4 {
+        margin-bottom: 25px;
+      }
+
+      .service-form-block {
+        display: flex;
+      }
+    }
+  }
+
+  .title {
+
+    h2 {
+      margin-bottom: 45px;
+    }
+  }
+
+  .cases-text {
+
+    span {
+      font-family: "GothamProBold";
+      text-align: right;
+    }
+  }
+}
+
+// ============================ POPUP ===================================
+
+.overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1;
+  
+  &:target {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.popup {
+  display: flex;
+  flex-direction: column;
+  padding: 25px 30px 20px;
+  background: #fff;
+  width: 25%;
+  position: relative;
+  transition: all 5s ease-in-out;
+  box-sizing: border-box;
+
+  @media screen and (max-width: 425px) {
+    width: 90%;
+    padding: 20px;
+  }
+
+  h5 {
+    // margin-top: 7px;
+    margin-bottom: 30px;
+
+    @media screen and (max-width: 425px) {
+      text-align: center;
+      font-size: 18px;
+      width: 80%;
+      margin: 0 auto 30px;
+    }
+  }
+  
+  .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+
+    @media screen and (max-width: 425px) {
+      top: 11px;
+      right: 20px;
+    }
+  }
+
+  form {
+
+    input {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    input[type="tel"] {
+      margin-bottom: 50px;
+    }
+
+    @media screen and (max-width: 425px) {
+      .button {
+        
+        .bevel-effect {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+// ============================ MEDIA ===================================
+
+// @media screen and (max-width: 425px) {
+
+// }

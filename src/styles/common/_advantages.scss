@@ -1,0 +1,102 @@
+.advantages {
+
+  .advantages-items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    // padding-bottom: 45px;
+
+    @media screen and (max-width: 425px) {
+      justify-content: center;
+    }
+
+    .advantages-block {
+      flex-basis: 540px;
+      // height: 255px;
+      padding-bottom: 90px;
+      position: relative;
+
+      &:nth-child(3n),
+      &:nth-child(4n) {
+        padding-bottom: 0;
+      }
+
+      @media screen and (max-width: 425px) {
+        width: 100%;
+        // flex-basis: 280px;
+        padding-bottom: 40px;
+
+        &:nth-child(3n) {
+          padding-bottom: 40px;
+        }
+      }
+
+      .number-bg {
+        position: absolute;
+        top: 80px;
+        background-color: #870f10;
+        width: 360px;
+        height: 260px;
+
+        @media screen and (max-width: 425px) {
+          width: 195px;
+          height: 155px;
+          top: 0;
+        }
+
+        span {
+          font-family: "GothamProBold", sans-serif;
+          opacity: 0.4;
+          font-size: 211.57px;
+          color: #fff;
+          position: relative;
+          top: 23px;
+          left: 7px;
+
+          @media screen and (max-width: 425px) {
+            font-size: 113px;
+            top: 30px;
+          }
+        }
+      }
+
+      .block-text {
+        margin-left: 160px;
+        background-color: #fff;
+        padding: 28px 12px 20px 36px;
+        position: relative;
+        z-index: 1;
+        box-shadow: 0px 14px 37.72px 8.28px rgba(0, 3, 6, 0.14);
+
+        @media screen and (max-width: 425px) {
+          margin-left: 85px;
+          padding: 20px 15px 15px;
+        }
+
+        h4 {
+          text-transform: none;
+          padding-bottom: 20px;
+          white-space: nowrap;
+
+          @media screen and (max-width: 425px) {
+            font-size: 15px;
+            overflow: hidden;
+            width: 190px;
+            padding-bottom: 10px;
+          }
+        }
+
+        p {
+          line-height: 25px;
+
+          @media screen and (max-width: 425px) {
+            // height: 75px;
+            // line-height: 25px;
+            // overflow: hidden;
+            line-height: 20px;
+          }
+        }
+      }
+    }
+  }
+}

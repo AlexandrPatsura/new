@@ -1,0 +1,112 @@
+.alternatives {
+
+  // .backtitle {
+    // top: 50px;
+  // }
+  padding-bottom: 85px;
+
+  @media screen and (max-width: 425px) {
+    padding-bottom: 30px;
+  }
+
+  .alternatives-product {
+    display: flex;
+    padding-bottom: 55px;
+
+    @media screen and (max-width: 425px) {
+      display: block;
+    }
+
+    .alternatives-text {
+      flex-basis: 555px;
+      background-color: #fff;
+      padding: 18px 70px 0 30px;
+      box-shadow: 0px 14px 37.72px 8.28px rgba(0, 3, 6, 0.14);
+
+      @media screen and (max-width: 425px) {
+        padding: 15px;
+      }
+
+      h4 {
+        padding-bottom: 15px;
+      }
+
+      p {
+        margin-bottom: 15px;
+      }
+
+      ul {
+        margin-bottom: 15px;
+  
+        li {
+          line-height: 30px;
+        
+          &::before {
+            content: url("../img/tick.png");
+            padding-right: 15px;
+          }
+        }
+      }
+    }
+  }
+
+  .alternatives-choose {
+    padding-top: 25px;
+    // display: flex;
+    // justify-content: space-between;
+
+    @media screen and (max-width: 425px) {
+      // display: block;
+      // justify-content: center;
+    }
+
+    .alternatives-item {
+      // background-color: #fff;
+      // box-shadow: 0px 4px 42.63px 6.37px rgba(0, 3, 6, 0.15);
+      // margin: 0 15px;
+      // width: 349px;
+      background-color: #fff;
+      box-shadow: 0 4px 10px 5px rgba(0,3,6,.15);
+      margin: 10px 15px;
+      width: 349px;
+      // flex-basis: 349px;
+
+      @media screen and (max-width: 425px) {
+        width: 300px;
+        // flex-basis: auto;
+
+        // &:nth-child(2),
+        // &:nth-child(3){
+          // display: none;
+        // }
+      }
+
+      // img {
+
+        // @media screen and (max-width: 425px) {
+          // width: 100%;
+        // }
+      // }
+      
+      .choose-block {
+        display: flex;
+        flex-direction: column;
+        height: 290px;
+        // margin-bottom: 50px;
+        padding: 20px 11px 45px;
+        box-sizing: border-box;
+
+        h4 {
+          font-family: "GothamProMedium", sans-serif;
+          // margin-bottom: auto;
+          margin-bottom: 45px;
+          line-height: 30px;
+        }
+
+        p {
+          line-height: 30px;
+        }
+      }
+    }
+  }
+}
